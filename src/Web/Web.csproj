@@ -3,6 +3,7 @@
   <PropertyGroup>
     <RootNamespace>CPHDevFest9neo.Web</RootNamespace>
     <AssemblyName>CPHDevFest9neo.Web</AssemblyName>
+    <UserSecretsId>a8f27a3a-0d27-4659-ae2b-970f3d5a6022</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
