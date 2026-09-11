@@ -25,12 +25,13 @@ jobs:
       AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
       AZURE_ENV_NAME: ${{ vars.AZURE_ENV_NAME }}
       AZURE_LOCATION: ${{ vars.AZURE_LOCATION }}
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Install azd
-        run: curl -fsSL https://aka.ms/install-azd.sh | bash
+        uses: Azure/setup-azd@v1.0.0
 
       - name: Install .NET
         uses: actions/setup-dotnet@v4
